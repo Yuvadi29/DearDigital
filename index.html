@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slick Slider Gallery</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <style>
+        /* Additional CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .gallery {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+        }
+
+        .download-button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Slick Slider Gallery</h1>
+    <div class="gallery">
+        <div>
+            <img src="https://images.unsplash.com/photo-1682687220211-c471118c9e92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image 1">
+            <a href="image1.jpg" class="download-button" download>Download</a>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1687622960862-af0ddb7590ed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Image 2">
+            <a href="image2.jpg" class="download-button" download>Download</a>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1687800132770-8f1600a5849e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1228&q=80" alt="Image 3">
+            <a href="image3.jpg" class="download-button" download>Download</a>
+        </div>
+        <div>
+            <img src="https://images.unsplash.com/photo-1687704840383-959f27cf03c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1331&q=80" alt="Image 4">
+            <a href="image4.jpg" class="download-button" download>Download</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gallery').slick({
+                autoplay: true,
+                autoplaySpeed: 4000
+            });
+        });
+    </script>
+</body>
+</html>
